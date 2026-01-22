@@ -1,0 +1,8 @@
+transformers
+datasets
+pandas
+pyvi
+scikit-learn
+torch
+accelerate>=0.26.0
+lime
