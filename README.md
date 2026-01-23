@@ -110,7 +110,7 @@ python train.py
 ```bash
 python app.py
 ```
-Đối với app.py có thể chỉnh tham số num_samples để đưa ra kết quả nhanh hơn, do để số lượng mẫu lấy càng lớn thì độ chính xác càng lớn, tuy nhiên thời gian chạy truy xấut sẽ càng lâu hơn
+Đối với app.py có thể chỉnh tham số num_samples = 50 hoặc nhỏ hơn để đưa ra kết quả nhanh hơn, do để số lượng mẫu lấy càng lớn thì độ chính xác càng lớn, tuy nhiên thời gian chạy truy xấut sẽ càng lâu hơn
 ```
 Sau đó truy cập trình duyệt tại địa chỉ: `http://localhost:5000`
 
