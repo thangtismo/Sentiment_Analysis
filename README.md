@@ -1,6 +1,8 @@
 # 🎭 ODIN Sentiment Analysis (Phân Tích Cảm Xúc)
 
-Dự án **ODIN Sentiment Analysis** là một ứng dụng web sử dụng trí tuệ nhân tạo để phân tích cảm xúc của văn bản tiếng Việt. Hệ thống có khả năng nhận diện và phân loại ý kiến người dùng thành 3 nhóm: **Tích cực**, **Tiêu cực**, hoặc **Trung lập**.
+Dự án **ODIN Sentiment Analysis** là một ứng dụng web sử dụng trí tuệ nhân tạo để phân tích cảm xúc của văn bản tiếng Việt. Hệ thống có khả năng nhận diện và phân loại ý kiến người dùng thành 3 nhóm: **Tích cực**, **Tiêu cực**, hoặc **Trung lập**
+
+Dữ liệu được lấy từ "https://huggingface.co/datasets/uitnlp/vietnamese_students_feedback".
 
 Đặc biệt, ứng dụng tích hợp **LIME** để giải thích lý do tại sao mô hình đưa ra dự đoán đó, giúp tăng tính minh bạch và độ tin cậy.
 
@@ -45,10 +47,13 @@ ODIN_sentiment_analysis/
 ├── requirements.txt       # Danh sách các thư viện cần cài đặt
 
 ├── data/                  # Thư mục chứa dữ liệu
+
 │   ├── train.csv          # Dữ liệu huấn luyện
+
 │   └── test.csv           # Dữ liệu kiểm thử
 
 ├── templates/             # Thư mục chứa giao diện HTML
+
 │   └── index.html         # Giao diện trang chủ
 
 ├── model_save/            # (Tự tạo) Thư mục chứa Model sau khi train
@@ -96,6 +101,8 @@ python train.py
 ```
 *   Model sau khi train sẽ được lưu vào thư mục `model_save`.
 *   *Lưu ý: Quá trình này có thể mất thời gian tùy thuộc vào phần cứng máy tính.*
+*   Có thể thực hiện chạy đối với file ipynb em đã tạo để chạy trên notebook web (5-7 phút)
+*   Hoặc truy cập theo đường link sau: "https://colab.research.google.com/drive/10cHD1j4hpUqLdDVd_K0kez4jWw99Mx0Q?usp=sharing"   
 
 ### Bước 3: Khởi chạy ứng dụng Web
 Để sử dụng giao diện phân tích cảm xúc:
