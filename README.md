@@ -34,17 +34,25 @@ Dự án được xây dựng trên các nền tảng và thư viện mã nguồ
 ## 📂 Cấu Trúc Dự Án
 
 ODIN_sentiment_analysis/
-├── app.py                 # File chính chạy Web App (Flask)
+├── app.py                 # File chính chạy Web App (Flask)    
+
 ├── train.py               # Script huấn luyện (Fine-tune) mô hình
+
 ├── preprocess.py          # Script tiền xử lý dữ liệu (sạch hóa, tách từ)
+
 ├── visualize.py           # Script trực quan hóa dữ liệu
+
 ├── requirements.txt       # Danh sách các thư viện cần cài đặt
+
 ├── data/                  # Thư mục chứa dữ liệu
 │   ├── train.csv          # Dữ liệu huấn luyện
 │   └── test.csv           # Dữ liệu kiểm thử
+
 ├── templates/             # Thư mục chứa giao diện HTML
 │   └── index.html         # Giao diện trang chủ
+
 ├── model_save/            # (Tự tạo) Thư mục chứa Model sau khi train
+
 └── README.md              # Tài liệu hướng dẫn này
 ```
 
